@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .perspective-container {
+    perspective: 1000px;
+  }
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  .mirror-x {
+    transform: scaleX(-1);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3335E4;
+  overflow: hidden; /* Prevent native scroll */
+}
+
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
